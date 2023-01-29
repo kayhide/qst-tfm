@@ -1,5 +1,5 @@
 dev:
-	fd .py | entr -cdr python main.py
+	fd .py | entr -cdr python src/main.py
 .PHONY: dev
 
 browse:
