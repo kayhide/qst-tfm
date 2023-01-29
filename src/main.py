@@ -1,4 +1,4 @@
 import prelude
 
 # import cubic_hermite_spline
-import one_cubit
+import one_qubit

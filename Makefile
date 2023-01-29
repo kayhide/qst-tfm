@@ -3,5 +3,5 @@ dev:
 .PHONY: dev
 
 browse:
-	feh -. output
+	feh -. -d output
 .PHONY: browse
