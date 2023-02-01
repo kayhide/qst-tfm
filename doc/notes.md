@@ -1,4 +1,13 @@
-### 
+###
+
+### 02/01
+
+- Next:
+  - Think how to make the following exponential operator into 2x2 matrix (in 24 hours)
+
+$$ e^{i \sigma_x}  = {\left\lbrack \matrix{? & ? \cr ? & ?} \right\rbrack}
+, \text{where } \sigma_x = {\left\lbrack \matrix{0 & 1 \cr 1 & 0} \right\rbrack}
+$$
 
 - Done:
   - Investigate numerical integration
