@@ -1,5 +1,19 @@
 ###
 
+- Done:
+  - Expand the exponential operator
+
+$$
+\begin{align*}
+e^{i \theta \sigma_x} & = \sum_{n=0}^\infty {(i \theta \sigma_x)^n \over n!}\\
+               & = \mathit{I} + i \theta \sigma_x - {1 \over 2!} (\theta \sigma_x)^2 - i {1 \over 3!} (\theta \sigma_x)^3 + ...\\
+               & = \mathit{I} + i \theta \sigma_x - {\theta^2 \over 2!} \mathit{I} - i {\theta^3 \sigma_x \over 3!} + ...\\
+               & = \mathit{I} \left( 1 - {\theta^2 \over 2!} + {\theta^4 \over 4!} - ... \right) + i \sigma_x \left( \theta - {\theta^3 \over 3!} + {\theta^5 \over 5!} - ... \right) \\
+               & = \left( \matrix{ \cos \theta & i \sin \theta \cr i \sin \theta & \cos \theta} \right)
+\end{align*}
+$$
+
+
 ### 02/01
 
 - Next:
