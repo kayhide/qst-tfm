@@ -1,4 +1,8 @@
-###
+### 02/03
+
+- Next
+  - Draw schedule function, see how it goes for various set of parameters
+  - Randomely generate the parameters
 
 - Done:
   - Expand the exponential operator
