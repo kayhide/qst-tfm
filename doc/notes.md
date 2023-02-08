@@ -1,4 +1,8 @@
-###
+### 02/08
+
+- Next:
+  - Study trotterization
+  - Think about how to compute exponential integrals seen in time evolution
 
 - Done:
   - Draw schedule function by piece-wise cubic interpolation [#](https://github.com/kayhide/qst-tfm/tree/main/src/cubic_hermite_spline)
