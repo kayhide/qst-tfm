@@ -1,3 +1,10 @@
+
+- Trotterization
+
+$$
+e^{-i (H_1 + H_2) t} = \lim_{N -> \infty} \left( e^{H_1 t \over N} e^{H_2 t \over N} \right) ^ N
+$$
+
 ### 02/08
 
 - Next:
