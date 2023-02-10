@@ -1,5 +1,15 @@
+### 02/10
 
-- Trotterization
+- Next
+  - Think about how to implement the continuous version of U(t)
+    - Take 1 week
+  - Explain what Trotterization is
+    - What is Trotterization?
+    - What are Trotterization errors?
+    - 1st and 2nd ordeer
+
+- Done
+  - See Trotterization
 
 $$
 e^{-i (H_1 + H_2) t} = \lim_{N -> \infty} \left( e^{H_1 t \over N} e^{H_2 t \over N} \right) ^ N
