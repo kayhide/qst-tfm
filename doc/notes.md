@@ -1,3 +1,6 @@
+- Done
+  - Investigate Torotterization [#](https://github.com/kayhide/qst-tfm/tree/main/doc/trotterization)
+
 ### 02/10
 
 - Next
