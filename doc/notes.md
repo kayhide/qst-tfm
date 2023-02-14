@@ -1,5 +1,24 @@
+### 02/12
+
+We discussed with Prof. Xi, and a guy.
+
+- Discussion
+  - Xi suggested that energy variance can be a good cost function.
+  - He also told that there is a case of digitization with non-constant time step
+
+Energy variance
+
+$$
+(\Delta E)^2 = \langle E^2 \rangle - \langle E \rangle ^2
+$$
+
+- Next
+  - Anyway, find a way to compute U(t)
+  - Try QuTip
+    [Solving Problems with Time-dependent Hamiltonians](https://qutip.org/docs/latest/guide/dynamics/dynamics-time.html)
+
 - Done
-  - Investigate Torotterization [#](https://github.com/kayhide/qst-tfm/tree/main/doc/trotterization)
+  - Investigate Torotterization [#](https://github.com/kayhide/qst-tfm/tree/main/doc/trotterization.md)
 
 ### 02/10
 
