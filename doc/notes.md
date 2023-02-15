@@ -1,3 +1,7 @@
+- Done
+  - Install qutip
+  - See an example of time-dependent hamiltonian work [#](https://github.com/kayhide/qst-tfm/tree/main/src/qutip_sandbox)
+
 ### 02/12
 
 We discussed with Prof. Xi, and a guy.
