@@ -1,10 +1,28 @@
+### 02/17
+
+- Next
+  - Use qutip and compute U(t)
+  - Reproduce the result of the case of single pauli operator on the paper
+
+Koushik told that $\sigma_z \sigma_z^2$ has a lot of applications.
+Here are some of them:
+
+- Applications
+  - travelling salesman
+  - portfolio optimization
+  - maxent
+  - SK model
+  - P-Spin model
+  - TFIM
+  - LFIM
+
 - Done
   - Install qutip
   - See an example of time-dependent hamiltonian work [#](https://github.com/kayhide/qst-tfm/tree/main/src/qutip_sandbox)
 
 ### 02/12
 
-We discussed with Prof. Xi, and a guy.
+We discussed with Prof. Xi, and Pranan.
 
 - Discussion
   - Xi suggested that energy variance can be a good cost function.
@@ -86,7 +104,7 @@ $$
   - I looked into numerical integrations.  
     They are for a single integration at a time and does not seem to solve exponential form of integral as we have.
     Am I missing something?
-  - As for the methods suggested by Koshik, they are already available at [scipy.integrate](https://docs.scipy.org/doc/scipy/tutorial/integrate.html)
+  - As for the methods suggested by Koushik, they are already available at [scipy.integrate](https://docs.scipy.org/doc/scipy/tutorial/integrate.html)
 
 - Ref:
   - [Trapezoidal rule](https://en.wikipedia.org/wiki/Trapezoidal_rule)
