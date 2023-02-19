@@ -1,5 +1,42 @@
 # One Qubit
 
+## Simulated time evolution
+
+### Line
+
+$$
+\lambda(t) = t
+$$
+
+![Line](../../output/one_qubit_line.png)
+
+### Sin
+
+$$
+\lambda(t) = \sin(\pi / 2 t)
+$$
+
+![Sin](../../output/one_qubit_sin.png)
+
+### Sin^2
+
+$$
+\lambda(t) = \sin^2(\pi / 2 t)
+$$
+
+![Sin](../../output/one_qubit_sin2.png)
+
+### Something wild
+
+$$
+\lambda(t) = t + \sin^2(\pi t) \cos(20 \pi t)
+$$
+
+![Something](../../output/one_qubit_something.png)
+
+
+## Random time evolution
+
 Initial: 
 
 $$ H_0 = \sigma_x = {\left\lbrack \matrix{0 & 1 \cr 1 & 0} \right\rbrack}
