@@ -1,3 +1,10 @@
+- Done
+  - Simultate time evolution for single qubit [#](https://github.com/kayhide/qst-tfm/tree/main/src/one_qubit#simulated-time-evolution)
+
+- Question
+  - With a linear schedule function, it does not seem reproducing the result by the paper...
+  - The linear and something wild schedule function ended up with the lowest error. Is it expected?
+
 ### 02/17
 
 - Next
