@@ -1,6 +1,20 @@
+### 02/20
+
+- Next
+  - Optimize schedule function for one-qubit case
+    - Use $\epsilon_R$ at $T = 4$ as a cost function
+    - Optimze by gradient descent method
+  - Try two-qubit case as I did at one-qubit example
+    - With $\lambda(t) = t$ or $\lambda(t) = \sin^2(...)$...
+- Discussion
+  - More than two qubit (N = 5, for example)
+
+$$
+H_f = \sum_{i \neq j = 1}^N \sigma_z^i \sigma_z^j
+$$
+
 - Done
   - Simultate time evolution for single qubit [#](https://github.com/kayhide/qst-tfm/tree/main/src/one_qubit#simulated-time-evolution)
-
 - Question
   - With a linear schedule function, it does not seem reproducing the result by the paper...
   - The linear and something wild schedule function ended up with the lowest error. Is it expected?
