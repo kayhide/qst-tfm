@@ -2,6 +2,18 @@
 
 ## Simulated time evolution
 
+### 2-param piece-wise cubic interpolation
+
+$p =(0.2, 0.2)$
+
+![2params_020_020](../../output/one_qubit/2params/020_020.svg)
+
+$p = (0.8, 0.2)$
+
+![2params_020_080](../../output/one_qubit/2params/020_080.svg)
+
+There are [more](../../output/one_qubit/2params/)
+
 ### Line
 
 $$
