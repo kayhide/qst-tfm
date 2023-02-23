@@ -1,3 +1,6 @@
+- Done
+  - For various 2-param piece-wise cubic splines, run simulations and plot variables [#](https://github.com/kayhide/qst-tfm/tree/main/src/one_qubit#2-param-piece-wise-cubic-interpolations)
+
 ### 02/20
 
 - Next
