@@ -59,19 +59,17 @@ def fixed_params():
         f = f"{out}/{name}.svg"
         plot(aqaoa, f, params=schedule.points)
 
-def optimizing_params():
-    out = "output/one_qubit/2params_optimizing"
+def optimizing_params(n_params=2):
+    out = f"output/one_qubit/{n_params}params_optimizing"
     os.makedirs(out, exist_ok=True)
 
     max_iteration = 100
-    delta = 1e-1
-    learning_rate = 1.0
-    _, p1, p2, _ = np.linspace(0, 1, 4)
-    working_params = np.array([p1, p2])
-    print(p1, p2, delta)
+    delta = 1e-10
+    update_rate = 0.1
+    working_params = np.linspace(0, 1, n_params + 2)[1:-1]
     for i in range(1, max_iteration + 1):
         print(f"Iteration: {i}")
-        schedule = Schedule(working_params.tolist())
+        schedule = Schedule(working_params)
         aqaoa = Aqaoa(schedule.spline)
         aqaoa.run(4)
         base = aqaoa.result.expect[2][-1].real
@@ -92,7 +90,7 @@ def optimizing_params():
             x = aqaoa1.result.expect[2][-1].real
             diffs[n] = x - base
 
-        working_params -= diffs
+        working_params -= diffs * update_rate / delta 
 
 
-optimizing_params()
+optimizing_params(3)
