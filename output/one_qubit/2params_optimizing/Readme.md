@@ -1,3 +1,5 @@
+![2params_optimizing](./out.gif)
+----
 ![2params_optimizing_001.svg](./001.svg)
 ![2params_optimizing_002.svg](./002.svg)
 ![2params_optimizing_003.svg](./003.svg)
