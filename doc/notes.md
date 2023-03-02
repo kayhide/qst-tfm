@@ -1,3 +1,12 @@
+### 03/01
+
+- Next
+  - Do the same for two-qubit states
+- Done
+  - By gradient descent, optimize schedule functions with
+    - 2-param [#](https://github.com/kayhide/qst-tfm/tree/main/output/one_qubit/2params_optimizing)
+    - 3-param [#](https://github.com/kayhide/qst-tfm/tree/main/output/one_qubit/3params_optimizing)
+
 ### 02/24
 
 - Next
