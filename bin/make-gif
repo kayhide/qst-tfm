@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+set -eu
+
+cd "$1"
+dst="out.gif"
+
+if ! (find -maxdepth 1 -name "*.svg" | grep . >/dev/null 2>&1); then
+    echo "No svg file"
+    exit 1
+fi
+convert -delay 20 -loop 0 *.svg "$dst"
+
+echo "create: ${1%/}/$dst"
