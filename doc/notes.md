@@ -1,3 +1,7 @@
+### 03/10
+
+- Next
+  - Use Energy variance as cost function
 - Done
   - Optimize 2-qubit ising model [#](https://github.com/kayhide/qst-tfm/tree/main/output/ising/2params_optimizing)
 
