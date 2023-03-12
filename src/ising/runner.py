@@ -20,15 +20,17 @@ def plot(aqaoa, f, params=None):
     ax = axs[0, 0]
     ax.set_title("Error")
     ax.set_ylim(-0.05, 1.05)
-    ax.plot(ts, result.expect[2])
+    ax.plot(ts, [x.real for x in result.expect[2]])
 
     ax = axs[0, 1]
     ax.set_title("Fidelity")
-    ax.plot(ts, result.expect[3])
+    ax.plot(ts, [x.real for x in result.expect[3]])
 
     ax = axs[1, 0]
-    ax.set_title("Cost")
-    ax.plot(ts, result.expect[1])
+    # ax.set_title("Cost")
+    # ax.plot(ts, [x.real for x in result.expect[1]])
+    ax.set_title("ΔE")
+    ax.plot(ts, [x.real for x in result.expect[4]])
 
     ax = axs[1, 1]
     if params:
@@ -50,14 +52,15 @@ def plot(aqaoa, f, params=None):
 class Runner:
     def __init__(self, n_params):
         self.n_params = n_params
+        self.t_final = 4
         self.iter = 0
-        self.out = f"output/ising/{n_params}params_optimizing"
+        self.out = f"output/ising/{n_params}params_optimizing_with_energy_variance"
         os.makedirs(self.out, exist_ok=True)
 
     def fun(self, ps):
         schedule = Schedule(ps)
         aqaoa = Aqaoa(schedule.spline)
-        return aqaoa.evaluate(4)
+        return aqaoa.evaluate(self.t_final, "energy_variance")
 
     def cb(self, ps):
         self.iter += 1
@@ -65,10 +68,12 @@ class Runner:
         print(f"Iteration: {i}")
         schedule = Schedule(ps)
         aqaoa = Aqaoa(schedule.spline)
-        aqaoa.run(4)
+        aqaoa.run(self.t_final)
         err = aqaoa.result.expect[2][-1].real
+        ev = aqaoa.result.expect[4][-1].real
         print(f"Params: {ps}")
         print(f"Error: {err}")
+        print(f"Energy var: {ev}")
 
         f = f"{self.out}/{i:03d}.svg"
         plot(aqaoa, f, params=schedule.points)
