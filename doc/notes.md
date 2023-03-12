@@ -1,3 +1,6 @@
+- Done
+  - Optimize 2-qubit ising model with $\Delta E$ [#](https://github.com/kayhide/qst-tfm/tree/main/output/ising/2params_optimizing_with_energy_variance)
+
 ### 03/10
 
 - Next
